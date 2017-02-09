@@ -3,6 +3,20 @@
 // Call this function when the page loads (the "ready" event)
 $(document).ready(function() {
 	initializePage();
+
+
+/**$(".friends a").click(function(event) {
+	event.preventDefault();
+	var name = $(this).text.trim();
+	$(this).text(anagrammedName(name));
+}) */
+
+
+$(".click-listener").click(function(event) {
+		event.preventDefault();
+		var name = $(this).text();
+		$(this).text(anagrammedName(name));
+	});
 })
 
 /*
